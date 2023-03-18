@@ -4,6 +4,10 @@
  */
 package aulapoo.pedidomesabar;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  *
  * @author aluno
@@ -11,22 +15,37 @@ package aulapoo.pedidomesabar;
 public class PedidoMesaBar {
 
     public static void main(String[] args) {
+        List<CadastroMesa> pedidos = new ArrayList<CadastroMesa>();
 
-        CadastroMesa mesa1 = new CadastroMesa(1, " 2 Cervejas ", 12.00, " Geraldo", 25.00);
-        System.out.println(" Número da Mesa: " + mesa1.getNumM() + " Pedido: " + mesa1.getPedeMesa() + " Valor Mesa: " + mesa1.getValorMe()
-                + " Garçom Do Atendimento " + mesa1.GarcomAtend() + " Gorjeta da Mesa " + mesa1.getGorj());
-        CadastroMesa mesa2 = new CadastroMesa(1, " 2 Cervejas ", 12.00, " Geraldo", 25.00);
-        System.out.println(" Número da Mesa: " + mesa2.getNumM() + " Pedido: " + mesa2.getPedeMesa() + " Valor Mesa: " + mesa2.getValorMe()
-                + " Garçom Do Atendimento " + mesa2.GarcomAtend() + " Gorjeta da Mesa " + mesa2.getGorj());
-        CadastroMesa mesa3 = new CadastroMesa(1, " 2 Cervejas ", 12.00, " Geraldo", 25.00);
-        System.out.println(" Número da Mesa: " + mesa3.getNumM() + " Pedido: " + mesa3.getPedeMesa() + " Valor Mesa: " + mesa3.getValorMe()
-                + " Garçom Do Atendimento " + mesa3.GarcomAtend() + " Gorjeta da Mesa " + mesa3.getGorj());
-        CadastroMesa mesa4 = new CadastroMesa(1, " 2 Cervejas ", 12.00, " Geraldo", 25.00);
-        System.out.println(" Número da Mesa: " + mesa4.getNumM() + " Pedido: " + mesa4.getPedeMesa() + " Valor Mesa: " + mesa4.getValorMe()
-                + " Garçom Do Atendimento " + mesa4.GarcomAtend() + " Gorjeta da Mesa " + mesa4.getGorj());
-        CadastroMesa mesa5 = new CadastroMesa(1, " 2 Cervejas ", 12.00, " Geraldo", 25.00);
-        System.out.println(" Número da Mesa: " + mesa5.getNumM() + " Pedido: " + mesa5.getPedeMesa() + " Valor Mesa: " + mesa5.getValorMe()
-                + " Garçom Do Atendimento " + mesa5.GarcomAtend() + " Gorjeta da Mesa " + mesa5.getGorj());
-   
+        // Solicitar o cadastro de 5 pedidos
+        for (int i = 1; i <= 5; i++) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Cadastro de Pedido " + i);
+            System.out.println("Numero da mesa:");
+            int numeroM = scanner.nextInt();
+            System.out.println("Status:");
+            String statusPedido = scanner.next();
+            System.out.println("Valor:");
+            double valorM = scanner.nextDouble();
+            System.out.println("Nome do Garçom:");
+            String garcomM = "Dean";
+            System.out.println("Gorjeta:");
+            double gorjetaM = scanner.nextDouble();
+
+            // Criar o objeto Pedido com os dados informados
+            CadastroMesa pedido = new CadastroMesa(numeroM, statusPedido, valorM, garcomM, gorjetaM);
+
+            // Adicionar o pedido na lista de pedidos
+            pedidos.add(pedido);
+        }
+
+        // Calcula o total dos 5 pedidos
+        double total = 0;
+        for (CadastroMesa pedido : pedidos) {
+            total += pedido.valorMesa;
+        }
+
+        System.out.println("Total dos Pedidos da Noite: " + total);
     }
 }

@@ -9,33 +9,39 @@ package aulapoo.pedidomesabar;
 public class CadastroMesa {
 
     public int numeroMesa;
-    public String pedidoMesa;
+    public String statusPedido;
     public double valorMesa;
     public String garcom;
     public double gorjeta;
 
-    public CadastroMesa(int numeroM, String pedidoM, double valorM, String garcomM, double gorjetaM) {
+
+    public CadastroMesa(int numeroM, String statusP, double valorM, String garcomM, double gorjetaM) {
         numeroMesa = numeroM;
-        pedidoMesa = pedidoM;
+        statusPedido = statusP;
         valorMesa = valorM;
         garcom = garcomM;
         gorjeta = gorjetaM;
+
     }
 
     public String getNumM() {
         return "Numero da Mesa: " + numeroMesa;
     }
-    public String getPedeMesa() {
-        return "Pedido da Mesa: " + pedidoMesa;
+
+    public String getStatusPedi() {
+        return "Status do Pedido: " + statusPedido;
     }
+
     public String getValorMe() {
         return "Conta da Mesa: " + valorMesa;
     }
+
     public String GarcomAtend() {
         return "Garçom que atendeu a mesa: " + garcom;
     }
-    
+
     public String getGorj() {
         return "Gorjeta Oferecida: " + gorjeta;
     }
+
 }

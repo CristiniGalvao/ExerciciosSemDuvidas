@@ -23,24 +23,48 @@ public class ConstrutorCer {
         CadastrarCerveja cerveja5 = new CadastrarCerveja("Corona", 4.5, 5.00, "S", "N", 5562);
 
         System.out.println("-----------------------CERVEJAS CADASTRADAS-----------------------");
-        System.out.println(" " + cerveja1.getNome() + " " + cerveja1.getTeor() + " " + cerveja1.getValor() + " " + cerveja1.getImportada()
-                + " " + cerveja1.getPuroMalt() + " " + cerveja1.getCodigo());
+        System.out.println(cerveja1.getNome());
+        System.out.println(cerveja1.getTeor());
+        System.out.println(cerveja1.getValor());
+        System.out.println(cerveja1.getImportada());
+        System.out.println(cerveja1.getPuroMalt());
+        System.out.println(cerveja1.getCodigo());
 
+        System.out.println("----------------------------------------------------------------");
+        System.out.println(cerveja2.getNome());
+        System.out.println(cerveja2.getTeor());
+        System.out.println(cerveja2.getValor());
+        System.out.println(cerveja2.getImportada());
+        System.out.println(cerveja2.getPuroMalt());
+        System.out.println(cerveja2.getCodigo());
 
-        System.out.println(" " + cerveja2.getNome() + " " + cerveja2.getTeor() + " " + cerveja2.getValor() + " " + cerveja2.getImportada()
-                + " " + cerveja2.getPuroMalt() + " " + cerveja2.getCodigo());
+        System.out.println("----------------------------------------------------------------");
 
+        System.out.println(cerveja3.getNome());
+        System.out.println(cerveja3.getTeor());
+        System.out.println(cerveja3.getValor());
+        System.out.println(cerveja3.getImportada());
+        System.out.println(cerveja3.getPuroMalt());
+        System.out.println(cerveja3.getCodigo());
 
-        System.out.println(" " + cerveja3.getNome() + " " + cerveja3.getTeor() + " " + cerveja3.getValor() + " " + cerveja3.getImportada()
-                + " " + cerveja3.getPuroMalt() + " " + cerveja3.getCodigo());
+        System.out.println("----------------------------------------------------------------");
 
+        System.out.println(cerveja4.getNome());
+        System.out.println(cerveja4.getTeor());
+        System.out.println(cerveja4.getValor());
+        System.out.println(cerveja4.getImportada());
+        System.out.println(cerveja4.getPuroMalt());
+        System.out.println(cerveja4.getCodigo());
 
-        System.out.println(" " + cerveja4.getNome() + " " + cerveja4.getTeor() + " " + cerveja4.getValor() + " " + cerveja4.getImportada()
-                + " " + cerveja4.getPuroMalt() + " " + cerveja4.getCodigo());
+        System.out.println("----------------------------------------------------------------");
 
+        System.out.println(cerveja5.getNome());
+        System.out.println(cerveja5.getTeor());
+        System.out.println(cerveja5.getValor());
+        System.out.println(cerveja5.getImportada());
+        System.out.println(cerveja5.getPuroMalt());
+        System.out.println(cerveja5.getCodigo());
 
-        System.out.println(" " + cerveja5.getNome() + " " + cerveja5.getTeor() + " " + cerveja5.getValor() + " " + cerveja5.getImportada()
-                + " " + cerveja5.getPuroMalt() + " " + cerveja5.getCodigo());
 
     }
 }

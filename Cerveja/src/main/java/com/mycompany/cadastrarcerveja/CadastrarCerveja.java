@@ -48,6 +48,6 @@ public class CadastrarCerveja {
     }
 
     public String getCodigo() {
-        return "Codigo da Cerveja" + codigo;
+        return "Codigo da Cerveja: " + codigo;
     }
 }

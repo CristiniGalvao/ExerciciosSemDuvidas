@@ -13,26 +13,26 @@ package com.mycompany.construtorbike;
  */
 public class CadastrarBike {
 
-    public String marca;
-    public String aro;
+    public String fabricante;
+    public int aro;
     public String cor;
-    private int ano;
+    private double peso;
     private char cesta;
     private double valor;
     private String cambio;
 
-    public CadastrarBike(String marcaB, String aroB, String corB, int anoB, char cestaB, double valorB, String cambioB) {
-        marca = marcaB;
+    public CadastrarBike(String fabricanteB, int aroB, String corB, double pesoB, char cestaB, double valorB, String cambioB) {
+        fabricante = fabricanteB;
         aro = aroB;
         cor = corB;
-        ano = anoB;
+        peso = pesoB;
         cesta = cestaB;
         valor = valorB;
         cambio = cambioB;
     }
 
-    public String getMarca() {
-        return "Marca da Bicicleta: " + marca;
+    public String getFabricante() {
+        return "Fabricante da Bicicleta: " + fabricante;
     }
 
     public String getAro() {
@@ -43,16 +43,16 @@ public class CadastrarBike {
         return "Cor da Bicicleta: " + cor;
     }
 
-    public String getAno() {
-        return "Ano da Bicicleta: " + ano;
+    public String getPeso() {
+        return "Peso suportado pela Bicicleta: " + peso;
     }
 
     public String getCesta() {
-        return "Tem cesta: " + cesta;
+        return "Tem cesta:(S para sim e N para não) " + cesta;
     }
 
     public String getValor() {
-        return "Valor da Bicicleta: " + valor;
+        return "Valor da Bicicleta: R$" + valor;
     }
 
     public String getCambio() {

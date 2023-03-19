@@ -89,10 +89,10 @@ public class ConstrutorFutebol {
         }
         System.out.println("-----------------------PROXIMO JOGO-----------------------");
 
-        if(time1!=null || time2!=null){
-            
-        System.out.println("Jogo de hoje é Time1 vs Time2");
-        
+        if (time1 != null || time2 != null) {
+
+            System.out.println("Jogo de hoje é Time1 vs Time2");
+
         }
     }
 }
